@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#121212"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-black"
+        android:letterSpacing="0.1"
+        android:text="MAZESYNC"
+        android:textColor="#008EE6"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TELEMETRIA ESP32"
+        android:textSize="12sp"
+        android:textColor="#757575"
+        android:letterSpacing="0.2"
+        android:layout_marginBottom="48dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1E1E1E"
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="48dp">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aguardando conexão..."
+            android:textSize="16sp"
+            android:textColor="#4FC3F7"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#1E1E1E"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp"
+            android:layout_marginEnd="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EIXO X"
+                android:textSize="16sp"
+                android:textColor="#FF5252"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvEixoX"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90°"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:background="#1E1E1E"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EIXO Y"
+                android:textSize="16sp"
+                android:textColor="#69F0AE"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/tvEixoY"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="90°"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incline o celular para mover o labirinto"
+        android:textSize="14sp"
+        android:textColor="#666666"
+        android:layout_marginTop="48dp"/>
+
+</LinearLayout>
